@@ -9,8 +9,6 @@ body {
     width: 80vw;
     margin: auto;
     min-height: 100vh;
-    border: 2px solid red;
-
 
 }
 
@@ -178,6 +176,7 @@ a:hover {
     }
     .pre_search, .lower-container {
         width: 96vw;
+        margin-left: 2vw;
     }
   
 }

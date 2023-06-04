@@ -9,6 +9,8 @@ body {
     width: 80vw;
     margin: auto;
     min-height: 100vh;
+    border: 2px solid red;
+
 
 }
 
@@ -39,7 +41,6 @@ body {
 }
 
 form {
-    /* border: 1px solid red; */
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
@@ -47,7 +48,6 @@ form {
     width: 20%;
     padding: 10px;
     margin-top: 20px;
-    /* align-items: center; */
 }
 
 input,
@@ -69,16 +69,26 @@ button {
 button {
     background-color: cadetblue;
     color: white;
-    
+
 }
-.btn-anm{
+
+.btn-anm {
     animation: horizotal-skaking 0.2s linear 1;
 
 }
-@keyframes horizotal-skaking{
-    0%{scale: 1;}
-    50%{scale: 0.95;}
-    100%{scale: 1;}
+
+@keyframes horizotal-skaking {
+    0% {
+        scale: 1;
+    }
+
+    50% {
+        scale: 0.95;
+    }
+
+    100% {
+        scale: 1;
+    }
 }
 
 
@@ -114,10 +124,12 @@ label {
 .pre_search h1 {
     padding: 10px;
 }
+
 .lower-container h1 {
     padding: 10px;
 
 }
+
 ul {
     list-style: none;
     /* min-height: 100px; */
@@ -139,23 +151,33 @@ a:hover {
     text-decoration: underline;
     cursor: pointer;
 }
-@media (max-width:1000px)
-{
+
+@media (max-width:1000px) {
     form {
         width: 50%;
     }
 }
 
-@media (max-width:800px)
-{
+@media (max-width:800px) {
     form {
         width: 50%;
     }
 }
 
-@media (max-width:400px)
-{
-    form {
-        width: 70%;
+@media (max-width:400px) {
+    .up-container {
+        width: 100vw;
     }
+
+    body {
+        width: 100vw;
+    }
+
+    form {
+        width: 80%;
+    }
+    .pre_search, .lower-container {
+        width: 96vw;
+    }
+  
 }
